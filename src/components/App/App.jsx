@@ -19,6 +19,9 @@ export const App = () => {
         location={user.location}
         avatar={user.avatar}
         stats={user.stats}
+        followers={user.followers}
+        views={user.views}
+        likes={user.likes}
       />
     </div>
   );
