@@ -14,14 +14,15 @@ export const App = () => {
       }}
     >
       <Profile
-        username={user.username}
-        tag={user.tag}
-        location={user.location}
-        avatar={user.avatar}
-        stats={user.stats}
-        followers={user.followers}
-        views={user.views}
-        likes={user.likes}
+        {...user}
+        // username={user.username}
+        // tag={user.tag}
+        // location={user.location}
+        // avatar={user.avatar}
+        // stats={user.stats}
+        // followers={user.followers}
+        // views={user.views}
+        // likes={user.likes}
       />
     </div>
   );

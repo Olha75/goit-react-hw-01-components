@@ -1,5 +1,7 @@
 // import user from '/user.json';
 // import { Profiler } from 'react';
+// import { Profile } from "index";
+import css from './Profile.module.css';
 
 export const Profile = ({
   views,
@@ -12,25 +14,26 @@ export const Profile = ({
   likes,
 }) => {
   return (
-    <div class="profile">
-      <div class="description">
+    <div className="profile">
+      <div className="description">
         <img src={avatar} alt="User avatar" class="avatar" />
-        <p class="name">{username}</p>
-        <p class="tag">{tag}</p>
-        <p class="location">{location}</p>
+        <p className="name">{username}</p>
+        <p className="tag">{tag}</p>
+        <p className="location">{location}</p>
       </div>
 
-      <ul class="stats">
+      <ul className="stats">
         <li>
-          <span class="label">{followers}</span>
-          <span class="quantity">1000</span>
+          <span className="label">{followers}</span>
+
+          <span className="quantity">1000</span>
         </li>
         <li>
-          <span class="label">{views}</span>
-          <span class="quantity">2000</span>
+          <span className="label">{views}</span>
+          <span className="quantity">2000</span>
         </li>
         <li>
-          <span class="label">{likes}</span>
+          <span className="label">{likes}</span>
           <span class="quantity">3000</span>
         </li>
       </ul>
