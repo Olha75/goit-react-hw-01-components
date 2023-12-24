@@ -3,7 +3,6 @@ body {
   /* background: linear-gradient(to right, red, blue); */
   /* background: radial-gradient(red, blue); */
   background: linear-gradient(50deg, rgb(252, 254, 241), rgb(252, 239, 252));
-  border-radius: 10px;
 }
 
 .profile {
