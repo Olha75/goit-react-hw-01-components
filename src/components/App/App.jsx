@@ -1,5 +1,6 @@
 import { Profile } from 'index';
 import user from 'data/user.json';
+import css from './app.module.css';
 
 export const App = () => {
   return (

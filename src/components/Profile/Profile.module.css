@@ -1,19 +1,31 @@
 body {
-  backgroundcolor: green;
+  /* background-color: rgb(253, 247, 252); */
+  /* background: linear-gradient(to right, red, blue); */
+  /* background: radial-gradient(red, blue); */
+  background: linear-gradient(50deg, rgb(252, 254, 241), rgb(252, 239, 252));
+  border-radius: 10px;
 }
 
 .profile {
-  backgroundcolor: red;
+  border-radius: 10px;
 }
 
 .description {
 }
 
 img {
+  border-radius: 50%;
+  background-color: rgb(199, 222, 252);
+  width: 100%;
+  border: 2px solid #fff;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 139, 0.3);
 }
 
 .name {
-  color: red;
+  margin-top: 30px;
+  color: darkblue;
+  text-align: center;
+  font-weight: 700;
 }
 
 .location {
