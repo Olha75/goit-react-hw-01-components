@@ -1,6 +1,8 @@
 import { Profile } from 'index';
 import user from 'data/user.json';
 import css from './app.module.css';
+import statistics from 'data/data.json';
+import { Statistics } from 'index';
 
 export const App = () => {
   return (
@@ -25,6 +27,9 @@ export const App = () => {
         // views={user.views}
         // likes={user.likes}
       />
+      <div>
+        <Statistics {...statistics} />
+      </div>
     </div>
   );
 };
