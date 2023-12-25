@@ -1,5 +1,6 @@
 .statistics {
-  background-color: aqua;
+  background-color: rgb(149, 152, 152);
+  display: flex;
 }
 
 .title {

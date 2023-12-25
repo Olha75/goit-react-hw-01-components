@@ -1,6 +1,3 @@
-// import user from '/user.json';
-// import { Profiler } from 'react';
-// import { Profile } from "index";
 import css from './profile.module.css';
 // import PropTypes from 'prop-types';
 
@@ -15,7 +12,7 @@ export const Profile = ({
   likes,
 }) => {
   return (
-    <div className={css.profile}>
+    <section className={css.profile}>
       <div className={css.description}>
         <img className={css.avatar} src={avatar} alt="User avatar" />
         <p className={css.name}>{username}</p>
@@ -38,6 +35,26 @@ export const Profile = ({
           <span class={css.quantity}>{stats.likes}</span>
         </li>
       </ul>
-    </div>
+    </section>
   );
 };
+
+export default Profile;
+
+// Profiler.defaultProps = {
+//   items: [],
+// };
+
+// Profile.propTypes = {
+//   username: PropTypes.string,
+//   tag: PropTypes.string,
+//   location: PropTypes.string,
+//   avatar: PropTypes.string,
+//   stats: PropTypes.arrayOf(
+//     PropTypes.shape({
+//       followers: PropTypes.number,
+//       views: PropTypes.number,
+//       likes: PropTypes.number,
+//     })
+//   ),
+// };

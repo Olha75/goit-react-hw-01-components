@@ -1,29 +1,45 @@
 import css from './statistics.module.css';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
+import getRandomHexColor from 'helpers/randomColor';
 
-export const Statistics = ({ id, label, percentage }) => {
+const Statistics = ({ title, items }) => {
+  const elements = items.map(({ id, label, percentage }) => (
+    <li
+      className={css.item}
+      key={id}
+      id={id}
+      style={{ backgroundColor: getRandomHexColor() }}
+    >
+      <span className={css.label}>{label}</span>
+      <span className={css.percentage}>{percentage}%</span>
+    </li>
+  ));
   return (
-    <section className="statistics">
-      <h2 className="title">Upload stats</h2>
+    <>
+      <section className={css.statistics}>
+        {title && <h2 className={css.title}>UPLOAD STATS</h2>}
 
-      <ul className="stat-list">
-        <li className="item">
-          <span className="label">{label}</span>
-          <span className="percentage">{percentage}</span>
-        </li>
-        <li className="item">
-          <span className="label">{label}</span>
-          <span className="percentage">{percentage}</span>
-        </li>
-        <li className="item">
-          <span className="label">{label}</span>
-          <span className="percentage">{percentage}</span>
-        </li>
-        <li className="item">
-          <span className="label">{label}</span>
-          <span className="percentage">{percentage}</span>
-        </li>
-      </ul>
-    </section>
+        <ul className={css.list}>{elements}</ul>
+      </section>
+    </>
   );
 };
+
+Statistics.defaultProps = {
+  items: [],
+};
+
+export default Statistics;
+
+// export { Statistics } from 'index';
+
+// Statistics.propTypes = {
+//   title: PropTypes.string,
+//   items: PropTypes.arrayOf(
+//     PropTypes.shape({
+//       id: PropTypes.string.isRequired,
+//       label: PropTypes.string,
+//       percentage: PropTypes.number,
+//     })
+//   ),
+// };
