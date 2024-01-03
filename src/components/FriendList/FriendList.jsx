@@ -7,8 +7,8 @@ const FriendList = ({ friends }) => {
     // <section className={css.myFriends}>
     <li className={css.friends} key={id} id={id}>
       <span className={isOnline ? css.online : css.offline}></span>
-      <img className={css.img} src={avatar} alt={name} />
-      <h2 className={css.name}>{name}</h2>
+      <img className={css.imgFriends} src={avatar} alt={name} />
+      <p className={css.name}>{name}</p>
     </li>
     /* </section> */
   ));
@@ -17,9 +17,9 @@ const FriendList = ({ friends }) => {
 
 export default FriendList;
 
-FriendList.defaultProps = {
-  friends: [],
-};
+// FriendList.defaultProps = {
+//   friends: [],
+// };
 
 // FriendList.propTypes = {
 //   friends: PropTypes.arrayOf(
