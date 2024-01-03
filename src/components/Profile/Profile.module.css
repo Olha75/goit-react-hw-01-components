@@ -15,10 +15,11 @@ body {
   box-shadow: 5px 5px 10px 0 rgba(0, 0, 139, 0.2);
   padding: 10 40px 20;
   border-radius: 30px;
-  width: 100%;
+  /* width: 100%; */
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 20px;
+  width: 400px;
 }
 
 img {

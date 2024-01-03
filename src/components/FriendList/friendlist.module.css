@@ -1,0 +1,23 @@
+.friendList {
+  display: block;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.isOnline {
+}
+
+.name {
+}
+
+.online {
+}
+
+.offline {
+}
+.myFriends {
+}
+img {
+  width: 40px;
+}
