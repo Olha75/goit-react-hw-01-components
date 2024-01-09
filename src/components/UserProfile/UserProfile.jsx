@@ -1,7 +1,7 @@
-import css from './profile.module.css';
+import css from './userprofile.module.css';
 // import PropTypes from 'prop-types';
 
-export const Profile = ({ stats, avatar, location, tag, username }) => {
+export const UserProfile = ({ stats, avatar, location, tag, username }) => {
   return (
     <section className={css.profile}>
       <div className={css.description}>
@@ -29,8 +29,6 @@ export const Profile = ({ stats, avatar, location, tag, username }) => {
     </section>
   );
 };
-
-export default Profile;
 
 // Profiler.defaultProps = {
 //   items: [],
